@@ -1,20 +1,20 @@
 class Snakepipe < Formula
   desc "Snake game based on stdin/stdout in rust"
   homepage "https://github.com/topheman/snake-pipe-rust"
-  version "2.1.0"
+  version "2.2.0"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.1.0/snakepipe-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "766507e0efe425e765da7c77637d10cff51b73bc53c3c30864a0b2cf19af225d"
+    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.2.0/snakepipe-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "c7534b7eb0fc8723aadb8218b745bf39045dbdcee16f8fd5f88b9bb1f7047913"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.1.0/snakepipe-aarch64-apple-darwin.tar.gz"
-    sha256 "f39bc0ed69f726e68be5af3789afa7a831390fd2fa4e58b83fa5a91c1d392410"
+    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.2.0/snakepipe-aarch64-apple-darwin.tar.gz"
+    sha256 "9dcc59d568a2f353c0450af9f814895df514c14f722e2b60d266b7a6f9eaffa8"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.1.0/snakepipe-x86_64-apple-darwin.tar.gz"
-    sha256 "3850aa0f4ed75bedadbb9c6dfdd7b0d5cc063937a4cd8f65d1cafff75942f945"
+    url "https://github.com/topheman/snake-pipe-rust/releases/download/v2.2.0/snakepipe-x86_64-apple-darwin.tar.gz"
+    sha256 "1a3b332429710645a46ff2f7a1d80527938cc0c84050a3ab2b9be7f50a37a665"
   end
 
   def install
